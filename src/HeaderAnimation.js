@@ -18,7 +18,7 @@ class HeaderAnimation extends Component {
                         translateY: this.headerY
                     }], height: this.props.height, position: 'absolute', width: '100%',
                 }}>
-                    <Text>aaaa</Text>
+                   {this.props.renderHeader()}
                 </Animated.View>
                 <Animated.ScrollView
                     scrollEventThrottle={1}
